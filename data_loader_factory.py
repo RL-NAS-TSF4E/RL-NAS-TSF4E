@@ -26,7 +26,7 @@ def get_data(flag, root_path='./ETDataset/ETT-small/', data_path='ETTh1.csv', se
         cols=cols
     )
 
-    print(flag, len(data_set))
+    #print(flag, len(data_set))
 
     data_loader = DataLoader(
         data_set,
