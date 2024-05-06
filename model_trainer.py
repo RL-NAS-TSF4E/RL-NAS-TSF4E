@@ -79,6 +79,6 @@ def _evaluate(model, data_loader, data, _process_one_batch, device, padding, pre
     trues = trues.reshape(-1, trues.shape[-2], trues.shape[-1])
 
     mae, mse, rmse, mape, mspe = utils.metric(preds, trues)
-    print('MSE: {}, MAE: {}'.format(mse, mae))
+    #print('MSE: {}, MAE: {}'.format(mse, mae))
 
     return preds, trues, mae, mse, rmse, mape, mspe
