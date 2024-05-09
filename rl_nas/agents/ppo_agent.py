@@ -38,7 +38,7 @@ class PPOAgent:
         ppo_model = PPO("MlpPolicy", env, verbose=1)
 
         # Train the model
-        ppo_model.learn(total_timesteps=steps, callback=StopTrainingAfterNStepsCallback(n_steps=steps))
+        ppo_model.learn(total_timesteps=steps, callback=rl_nas.environment.StopTrainingAfterNStepsCallback(n_steps=steps))
 
         model_path = ( "./agent_checkpoints/ppo_model.pth")
         ppo_model.save(model_path)
