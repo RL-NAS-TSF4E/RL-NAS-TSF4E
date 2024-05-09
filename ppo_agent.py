@@ -43,7 +43,7 @@ class PPOAgent:
         torch.cuda.empty_cache()
 
         # Retrieve actions_mae from the environment
-        ppo_actions_mae = self.env.envs[0].actions_mae
+        ppo_actions_mae = env.envs[0].actions_mae
 
         # Find the best parameters
         min_mae = min(item[1] for item in ppo_actions_mae)
