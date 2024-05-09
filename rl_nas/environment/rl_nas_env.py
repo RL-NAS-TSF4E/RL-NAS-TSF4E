@@ -12,6 +12,8 @@ import utils
 import models
 from model_trainer import _process_one_batch, vali, train, _evaluate
 
+import rl_nas
+
 class RLNASEnv(gym.Env):
     def __init__(self, seq_len, label_len, pred_len, embed, freq, device, path, train_epochs, lradj, padding, inverse, features, train_loader, val_data, val_loader, default_val_mae):
         self.seq_len = seq_len
