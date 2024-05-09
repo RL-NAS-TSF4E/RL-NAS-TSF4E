@@ -35,7 +35,7 @@ class PPOAgent:
         env = DummyVecEnv([lambda: self.env])
 
         # Define A2C model
-        ppo_model = PPO("MlpPolicy", self.env, verbose=1)
+        ppo_model = PPO("MlpPolicy", env, verbose=1)
 
         # Train the model
         ppo_model.learn(total_timesteps=steps, callback=StopTrainingAfterNStepsCallback(n_steps=steps))
