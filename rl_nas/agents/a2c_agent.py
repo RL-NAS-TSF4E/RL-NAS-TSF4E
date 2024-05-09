@@ -9,7 +9,7 @@ from model_trainer import _process_one_batch, vali, train, _evaluate
 from stable_baselines3 import A2C
 from stable_baselines3.common.vec_env import DummyVecEnv
 
-from rl_early_termination import StopTrainingAfterNStepsCallback
+import rl_nas
 
 class A2CAgent:
     def __init__(self, seq_len, label_len, pred_len, embed, freq, device, path, train_epochs, lradj, padding, inverse, features, train_loader, val_data, val_loader, env):
