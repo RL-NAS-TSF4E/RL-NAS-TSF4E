@@ -38,7 +38,7 @@ class A2CAgent:
         a2c_model = A2C("MlpPolicy", env, verbose=1)
 
         # Train the model
-        a2c_model.learn(total_timesteps=steps, callback=StopTrainingAfterNStepsCallback(n_steps=steps))
+        a2c_model.learn(total_timesteps=steps, callback=rl_nas.environment.StopTrainingAfterNStepsCallback(n_steps=steps))
 
         model_path = ( "./agent_checkpoints/a2c_model.pth")
         a2c_model.save(model_path)
