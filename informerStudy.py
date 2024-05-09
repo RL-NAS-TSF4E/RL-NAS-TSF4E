@@ -10,8 +10,6 @@ import optuna
 
 import utils
 import models
-from data_loader import Dataset_ETT_hour
-from data_loader_factory import get_data
 from model_trainer import _process_one_batch, vali, train, _evaluate
 
 class InformerStudy:
