@@ -13,7 +13,7 @@ def get_data(flag, root_path='./ETDataset/ETT-small/', data_path='ETTh1.csv', se
         shuffle_flag = True
         drop_last = True
 
-    data_set = Dataset_ETT_hour(
+    data_set = data_factory.Dataset_ETT_hour(
         root_path=root_path,
         data_path=data_path,
         flag=flag,
