@@ -35,7 +35,7 @@ class A2CAgent:
         env = DummyVecEnv([lambda: self.env])
 
         # Define A2C model
-        a2c_model = A2C("MlpPolicy", self.env, verbose=1)
+        a2c_model = A2C("MlpPolicy", env, verbose=1)
 
         # Train the model
         a2c_model.learn(total_timesteps=steps, callback=StopTrainingAfterNStepsCallback(n_steps=steps))
