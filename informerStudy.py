@@ -147,7 +147,7 @@ class InformerStudy:
         #evaluate on test data
         preds, trues, test_mae, test_mse, test_rmse, test_mape, test_mspe = _evaluate(model, self.test_loader, self.test_data, _process_one_batch, self.device, self.padding, self.pred_len, self.label_len, self.inverse, self.features)
 
-        torch.save(model.state_dict(), self.path+'/'+'checkpoint.pth')
+        torch.save(model.state_dict(), self.path+'/'+'optuna_informer.pth')
 
         torch.cuda.empty_cache()
 
