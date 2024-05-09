@@ -1,7 +1,7 @@
 import torch
 import torch.nn as nn
 from torch.utils.data import Dataset, DataLoader
-from data_loader import Dataset_ETT_hour
+import data_factory
 
 def get_data(flag, root_path='./ETDataset/ETT-small/', data_path='ETTh1.csv', seq_len=96, label_len=48, pred_len=24, features='M', target='OT', inverse=False, embed='timeF', batch_size=32, freq='h', num_workers=0, cols=None):
     timeenc = 0 if embed != 'timeF' else 1
