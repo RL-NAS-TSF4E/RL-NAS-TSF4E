@@ -40,6 +40,9 @@ class A2CAgent:
         # Train the model
         a2c_model.learn(total_timesteps=steps, callback=StopTrainingAfterNStepsCallback(n_steps=steps))
 
+        model_path = ( "./agent_checkpoints/a2c_model.pth")
+        a2c_model.save(model_path)
+
         torch.cuda.empty_cache()
 
         # Retrieve actions_mae from the environment
