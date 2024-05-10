@@ -12,8 +12,6 @@
 
 [Insert here a figure explaining your approach or main results]
 
-![results](/result.png)
-
 ## Table of Content
 
 - [Summary](#summary)
