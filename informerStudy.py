@@ -42,6 +42,8 @@ class InformerStudy:
         d_ff = trial.suggest_categorical('d_ff', [512, 1024, 2048])
         d_model = trial.suggest_categorical('d_model', [512, 1024, 2048])
 
+        parameters = np.array(e_layers, d_layers, dropout, factor, n_heads, d_ff, d_model)
+
         #build model candidate
         model = models.Informer(
             enc_in=7,
@@ -86,6 +88,8 @@ class InformerStudy:
         preds, trues, val_mae, val_mse, val_rmse, val_mape, val_mspe = _evaluate(model, self.val_loader, self.val_data, _process_one_batch, self.device, self.padding, self.pred_len, self.label_len, self.inverse, self.features)
 
         torch.cuda.empty_cache()
+
+        self.actions_mae.append([parameters, mae])
 
         return val_mae
 
