@@ -2,7 +2,7 @@
 
 **Type:** Master's Thesis / Bachelor's Thesis
 
-**Author:** xxx
+**Author:** Ali Jaabous
 
 **Supervisor:** xxx (only if different from the 1st or the 2nd Examiner)
 
