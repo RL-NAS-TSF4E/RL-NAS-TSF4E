@@ -42,7 +42,7 @@ class InformerStudy:
         d_ff = trial.suggest_categorical('d_ff', [512, 1024, 2048])
         d_model = trial.suggest_categorical('d_model', [512, 1024, 2048])
 
-        parameters = np.array(e_layers, d_layers, dropout, factor, n_heads, d_ff, d_model)
+        parameters = np.array([e_layers, d_layers, dropout, factor, n_heads, d_ff, d_model])
 
         #build model candidate
         model = models.Informer(
