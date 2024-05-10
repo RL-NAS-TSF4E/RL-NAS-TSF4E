@@ -31,6 +31,7 @@ class InformerStudy:
         self.val_loader = val_loader
         self.test_data = test_data
         self.test_loader = test_loader
+        self.actions_mae = []
 
     def objective(self, trial):
         e_layers = trial.suggest_int('e_layers', 1, 6)
