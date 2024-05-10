@@ -89,7 +89,7 @@ class InformerStudy:
 
         torch.cuda.empty_cache()
 
-        self.actions_mae.append([parameters, mae])
+        self.actions_mae.append([parameters, val_mae])
 
         return val_mae
 
