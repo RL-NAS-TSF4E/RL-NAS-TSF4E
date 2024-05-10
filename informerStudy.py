@@ -150,4 +150,4 @@ class InformerStudy:
 
         torch.cuda.empty_cache()
 
-        return study, preds, trues, test_mae, test_mse, test_rmse, test_mape, test_mspe
+        return study, preds, trues, test_mae, test_mse, test_rmse, test_mape, test_mspe, self.actions_mae
