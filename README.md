@@ -1,6 +1,6 @@
 # Reinforcement Learning based Neural Architecture Search for Transformer guided Time Series Prediction Problems in the context of the Energy sector
 
-**Type:** Master's Thesis / Bachelor's Thesis
+**Master's Thesis**
 
 **Author:** Ali Jaabous
 
