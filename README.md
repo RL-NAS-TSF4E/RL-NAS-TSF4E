@@ -6,7 +6,7 @@
 
 **Supervisor:** xxx (only if different from the 1st or the 2nd Examiner)
 
-**1st Examiner:** Prof. Lessmann 
+**1st Examiner: Prof. Dr. Stefan Lessmann** 
 
 **2nd Examiner:** Prof. Fabian
 
