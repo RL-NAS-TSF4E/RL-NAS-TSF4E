@@ -8,7 +8,7 @@
 
 **1st Examiner: Prof. Dr. Stefan Lessmann** 
 
-**2nd Examiner:** Prof. Fabian
+**2nd Examiner PD Dr. Benjamin Fabian:**
 
 [Insert here a figure explaining your approach or main results]
 
