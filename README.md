@@ -10,7 +10,7 @@
 
 **Date: 21.05.2024**
 
-![exp_approach](https://github.com/RL-NAS-TSF4E/RL-NAS-TSF4E/assets/168930273/f2857d6b-983f-4efe-b455-6f9c2ab7592a)
+![exp_approach](https://github.com/RL-NAS-TSF4E/RL-NAS-TSF4E/assets/168930273/1a890684-798f-4b33-946c-5e9ee2c2b70d)
 
 ## Table of Content
 
