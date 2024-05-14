@@ -10,7 +10,7 @@
 
 **Date: 21.05.2024**
 
-![Uploading exp_approach.jpg…]()
+![exp_approach](https://github.com/RL-NAS-TSF4E/RL-NAS-TSF4E/assets/168930273/f2857d6b-983f-4efe-b455-6f9c2ab7592a)
 
 ## Table of Content
 
