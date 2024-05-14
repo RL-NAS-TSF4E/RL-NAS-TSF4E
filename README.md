@@ -10,8 +10,7 @@
 
 **Date: 21.05.2024**
 
-![Uploading image.png…]()
-
+![Uploading exp_approach.jpg…]()
 
 ## Table of Content
 
