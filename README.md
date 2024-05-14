@@ -10,7 +10,8 @@
 
 **Date: 21.05.2024**
 
-[Insert here a figure explaining your approach or main results]
+![image](https://github.com/RL-NAS-TSF4E/RL-NAS-TSF4E/assets/168930273/8348fb83-cfba-4685-89f3-2c70720a4b41)
+
 
 ## Table of Content
 
