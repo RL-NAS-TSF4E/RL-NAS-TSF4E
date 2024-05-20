@@ -93,19 +93,17 @@ Does a repository contain a table/plot of main results and a script to reproduce
 ```bash
 ├── README.md
 ├── requirements.txt                                -- required libraries
-├── data                                            -- stores csv file 
-├── plots                                           -- stores image files
 └── agent_checkpoints
-    ├── a2c_model.pth                               -- weights of the a2c agent
-    └── ppo_model.pth                               -- weights of the ppo agent
+    ├── a2c_model.pth                               -- stores weights of the a2c agent
+    └── ppo_model.pth                               -- stores weights of the ppo agent
 └── data_factory
     ├── data_loader.py                              -- preprocesses the dataset
     └── data_loader_factory.py                      -- builds dataset and data_loader
 └── informer_checkpoints
-    ├── a2c_informer.7z                              -- weights of the a2c optimized model
-    ├── default_informer.7z                          -- weights of the default model
-    ├── optuna_informer.7z                           -- weights of the optuna optimized model
-    └── ppo_informer.7z                              -- weights of the ppo optimized model
+    ├── a2c_informer.7z                              -- stores weights of the a2c optimized model
+    ├── default_informer.7z                          -- stores weights of the default model
+    ├── optuna_informer.7z                           -- stores weights of the optuna optimized model
+    └── ppo_informer.7z                              -- stores weights of the ppo optimized model
 └── models
     ├── __init__.py                                  -- 
     ├── attn.py                                      -- implementation of the attention mechanism
@@ -134,5 +132,20 @@ Does a repository contain a table/plot of main results and a script to reproduce
         ├── ppo_pred.npy                             -- Predictions
         └── ppo_true.npy                             -- Groundtruth                                        
 └── rl_nas
-└── utils             
+    ├── agents
+        ├── __init__.py                              -- 
+        ├── a2c_agent.py                             -- 
+        └── ppo_agent.py                             --     
+    ├── environment
+        ├── __init__.py                              -- 
+        ├── rl_early_termination.py                  --
+        └── rl_nas_env.py                            --         
+    └── __init__.py                                  --                             
+└── utils
+    ├── __init__.py                                  -- 
+    ├── index.txt                                    -- 
+    ├── masking.py                                   -- 
+    ├── metrics.py                                   -- 
+    ├── timefeatures.py                              -- 
+    └── tools.py                                     --              
 ```
