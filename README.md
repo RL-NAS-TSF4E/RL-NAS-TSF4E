@@ -60,21 +60,13 @@ pip install -r requirements.txt
 
 ## Reproducing results
 
-Describe steps how to reproduce your results.
+After setup, the enclosed notebooks can be used to reproduce all experiments, results and visualizations.
 
-Here are some examples:
-- [Paperswithcode](https://github.com/paperswithcode/releasing-research-code)
-- [ML Reproducibility Checklist](https://ai.facebook.com/blog/how-the-ai-community-can-get-serious-about-reproducibility/)
-- [Simple & clear Example from Paperswithcode](https://github.com/paperswithcode/releasing-research-code/blob/master/templates/README.md) (!)
-- [Example TensorFlow](https://github.com/NVlabs/selfsupervised-denoising)
+All experiments and subdirectories can be realized using the notebook with the extension Exp. Specifically, the notebook covers the default case, the comparison experiment with Optuna and the two main experiments supported by RL-NAS. Furthermore, the notebook generates the directories informer_checkpoints and agent_checkpoints within the code, in which the weights for the agents as well as the weights of the models optimized using the optimization approaches are stored. All results are stored in the results directory with the results for the respective approach. 
 
-### Training code
+### Training, Evaluation & Testing
 
-Does a repository contain a way to train/fit the model(s) described in the paper?
 
-### Evaluation code
-
-Does a repository contain a script to calculate the performance of the trained model(s) or run experiments on models?
 
 ### Pretrained models
 
