@@ -95,10 +95,44 @@ Does a repository contain a table/plot of main results and a script to reproduce
 ├── requirements.txt                                -- required libraries
 ├── data                                            -- stores csv file 
 ├── plots                                           -- stores image files
-└── src
-    ├── prepare_source_data.ipynb                   -- preprocesses data
-    ├── data_preparation.ipynb                      -- preparing datasets
-    ├── model_tuning.ipynb                          -- tuning functions
-    └── run_experiment.ipynb                        -- run experiments 
-    └── plots                                       -- plotting functions                 
+└── agent_checkpoints
+    ├── a2c_model.pth                               -- weights of the a2c agent
+    └── ppo_model.pth                               -- weights of the ppo agent
+└── data_factory
+    ├── data_loader.py                              -- preprocesses the dataset
+    └── data_loader_factory.py                      -- builds dataset and data_loader
+└── informer_checkpoints
+    ├── a2c_informer.7z                              -- weights of the a2c optimized model
+    ├── default_informer.7z                          -- weights of the default model
+    ├── optuna_informer.7z                           -- weights of the optuna optimized model
+    └── ppo_informer.7z                              -- weights of the ppo optimized model
+└── models
+    ├── __init__.py                                  -- 
+    ├── attn.py                                      -- implementation of the attention mechanism
+    ├── decoder.py                                   -- decoder structure of the informer
+    ├── embed.py                                     -- embedding function for the data processing
+    ├── encoder.py                                   -- encoder structure of the informer
+    └── model.py                                     -- calls the other classes and builds the informer
+└── results
+    ├── a2c
+        ├── a2c_actions_mae.pkl                      -- architecture decisions & MAE during optimization
+        ├── a2c_metrics.npy                          -- MAE, MSE, RMSE, MAPE, MSPE
+        ├── a2c_pred.npy                             -- Predictions
+        └── a2c_true.npy                             -- Groundtruth    
+    ├── default
+        ├── metrics.npy                              -- MAE, MSE, RMSE, MAPE, MSPE
+        ├── pred.npy                                 -- Predictions
+        └── true.npy                                 -- Groundtruth                              
+    ├── optuna
+        ├── optuna_actions_mae.pkl                   -- architecture decisions & MAE during optimization
+        ├── optuna_metrics.npy                       -- MAE, MSE, RMSE, MAPE, MSPE
+        ├── optuna_pred.npy                          -- Predictions
+        └── optuna_true.npy                          -- Groundtruth                                      
+    └── ppo
+        ├── ppo_actions_mae.pkl                      -- architecture decisions & MAE during optimization
+        ├── ppo_metrics.npy                          -- MAE, MSE, RMSE, MAPE, MSPE
+        ├── ppo_pred.npy                             -- Predictions
+        └── ppo_true.npy                             -- Groundtruth                                        
+└── rl_nas
+└── utils             
 ```
