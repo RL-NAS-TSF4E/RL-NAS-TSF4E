@@ -77,7 +77,7 @@ The directory rl_nas as well as the class informerStudy are organized as package
 ```bash
 ├── README.md
 ├── requirements.txt                                -- required libraries
-├── RL_NAS_TSF4E_Viz.ipynb                          -- organizes the experiments and results as well the storage of the optimized models
+├── RL_NAS_TSF4E_Exp.ipynb                          -- organizes the experiments and results as well the storage of the optimized models
 ├── RL_NAS_TSF4E_Viz.ipynb                          -- organizes all vizualisations
 ├── informerStudy.py                                -- package for application of optuna on the informer
 ├── model_trainer.py                                -- package which organizes the triaing as well the evaluation and testing
