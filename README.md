@@ -101,7 +101,7 @@ Does a repository contain a table/plot of main results and a script to reproduce
     ├── optuna_informer.7z                           -- stores weights of the optuna optimized model
     └── ppo_informer.7z                              -- stores weights of the ppo optimized model
 └── models
-    ├── __init__.py                                  -- 
+    ├── __init__.py                                  -- wrapping classes into package
     ├── attn.py                                      -- implementation of the attention mechanism
     ├── decoder.py                                   -- decoder structure of the informer
     ├── embed.py                                     -- embedding function for the data processing
@@ -129,19 +129,18 @@ Does a repository contain a table/plot of main results and a script to reproduce
         └── ppo_true.npy                             -- Groundtruth                                        
 └── rl_nas
     ├── agents
-        ├── __init__.py                              -- 
-        ├── a2c_agent.py                             -- 
-        └── ppo_agent.py                             --     
+        ├── __init__.py                              -- wrapping classes into package
+        ├── a2c_agent.py                             -- implementation of the a2c agent
+        └── ppo_agent.py                             -- implementation of the ppo agent    
     ├── environment
-        ├── __init__.py                              -- 
-        ├── rl_early_termination.py                  --
-        └── rl_nas_env.py                            --         
-    └── __init__.py                                  --                             
+        ├── __init__.py                              -- wrapping classes into package 
+        ├── rl_early_termination.py                  -- early termination function for the environment
+        └── rl_nas_env.py                            -- implementation of an openAI based environment       
+    └── __init__.py                                  -- wrapping classes into package                            
 └── utils
-    ├── __init__.py                                  -- 
-    ├── index.txt                                    -- 
-    ├── masking.py                                   -- 
-    ├── metrics.py                                   -- 
-    ├── timefeatures.py                              -- 
-    └── tools.py                                     --              
+    ├── __init__.py                                  -- wrapping classes into package
+    ├── masking.py                                   -- helper function for the building of the informer 
+    ├── metrics.py                                   -- helper function for the building of the informer 
+    ├── timefeatures.py                              -- helper function for the building of the informer 
+    └── tools.py                                     -- helper function for the building of the informer             
 ```
