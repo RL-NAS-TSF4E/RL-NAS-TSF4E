@@ -6,7 +6,7 @@
 
 **1st Examiner: Prof. Dr. Stefan Lessmann** 
 
-**2nd Examiner: PD Dr. Benjamin Fabian**
+**2nd Examiner: Prof. Dr. Benjamin Fabian**
 
 **Date: 21.05.2024**
 
