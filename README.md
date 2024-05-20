@@ -26,6 +26,7 @@
 
 **Neural Architeture Search, Reinforcement Learning, Transfomer, Time Series Prediction**
 
+As part of the thesis topic listed above, a comparison was made between a transformer model (Informer) optimized by Optuna and two instances of the model optimized with RL-NAS. This repository should make it possible to reproduce all results as well as offer the possibility of reproducibility.
 
 ## Working with the repo
 
