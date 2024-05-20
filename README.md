@@ -32,7 +32,7 @@ As part of the thesis topic listed above, a comparison was made between a transf
 
 ### Dependencies
 
-The project with realized with Visual Studio at the server grünau 9 of the computer science faculty of the Humboldt University. The Python version was 3.12.2
+The project was realized with Visual Studio at the server grünau 9 of the computer science faculty of the Humboldt University. The Python version was 3.12.2
 
 ### Setup
 
@@ -54,7 +54,7 @@ pip install -r requirements.txt
 
 After setup, the enclosed notebooks can be used to reproduce all experiments, results and visualizations.
 
-All experiments and subdirectories can be realized using the notebook with the extension Exp. Specifically, the notebook covers the default case, the comparison experiment with Optuna and the two main experiments supported by RL-NAS. Furthermore, the notebook generates the directories informer_checkpoints and agent_checkpoints within the code, in which the weights for the agents as well as the weights of the models optimized using the optimization approaches are stored. Due to their large size compremiered versions could only be made available. The pre-trained models can be loaded as required using model.load_state_dict(torch.load(path)). Of course, this requires initialization with the necessary parameters, which were specified for the corresponding approaches within the master's thesis.
+All experiments and subdirectories can be realized using the notebook with the extension Exp. Specifically, the notebook covers the default case, the comparison experiment with Optuna and the two main experiments supported by RL-NAS. For this purpose, it is necessary to adapt the path specified in the notebook to your own infrastructure. Furthermore, the notebook generates the directories informer_checkpoints and agent_checkpoints within the code, in which the weights for the agents as well as the weights of the models optimized using the optimization approaches are stored. Due to their large size compremiered versions could only be made available. The pre-trained models can be loaded as required using model.load_state_dict(torch.load(path)). Of course, this requires initialization with the necessary parameters, which were specified for the corresponding approaches within the master's thesis.
 
 All visualizations and metrics can be implemented using the notebook with the Viz extension. 
 
