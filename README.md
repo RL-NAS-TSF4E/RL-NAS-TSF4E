@@ -38,9 +38,7 @@
 
 ### Dependencies
 
-Which Python version is required? 
-
-Does a repository have information on dependencies or instructions on how to set up the environment?
+The project with realized with Visual Studio at the server grünau 9 of the computer science faculty of the Humboldt University. The Python version was 3.12.2
 
 ### Setup
 
