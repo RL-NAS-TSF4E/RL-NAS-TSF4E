@@ -24,12 +24,8 @@
 
 ## Summary
 
-(Short summary of motivation, contributions and results)
+**Neural Architeture Search, Reinforcement Learning, Transfomer, Time Series Prediction**
 
-**Keywords**: xxx (give at least 5 keywords / phrases).
-
-**Full text**: [include a link that points to the full text of your thesis]
-*Remark*: a thesis is about research. We believe in the [open science](https://en.wikipedia.org/wiki/Open_science) paradigm. Research results should be available to the public. Therefore, we expect dissertations to be shared publicly. Preferably, you publish your thesis via the [edoc-server of the Humboldt-Universität zu Berlin](https://edoc-info.hu-berlin.de/de/publizieren/andere). However, other sharing options, which ensure permanent availability, are also possible. <br> Exceptions from the default to share the full text of a thesis require the approval of the thesis supervisor.  
 
 ## Working with the repo
 
