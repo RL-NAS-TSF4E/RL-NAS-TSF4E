@@ -44,9 +44,7 @@ Does a repository have information on dependencies or instructions on how to set
 
 ### Setup
 
-[This is an example]
-
-1. Clone this repository
+1. Clone this repository and the rpository from https://github.com/zhouhaoyi/ETDataset/tree/main
 
 2. Create an virtual environment and activate it
 ```bash
