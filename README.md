@@ -57,7 +57,11 @@ pip install -r requirements.txt
 
 After setup, the enclosed notebooks can be used to reproduce all experiments, results and visualizations.
 
-All experiments and subdirectories can be realized using the notebook with the extension Exp. Specifically, the notebook covers the default case, the comparison experiment with Optuna and the two main experiments supported by RL-NAS. Furthermore, the notebook generates the directories informer_checkpoints and agent_checkpoints within the code, in which the weights for the agents as well as the weights of the models optimized using the optimization approaches are stored. All results are stored in the results directory with the results for the respective approach. 
+All experiments and subdirectories can be realized using the notebook with the extension Exp. Specifically, the notebook covers the default case, the comparison experiment with Optuna and the two main experiments supported by RL-NAS. Furthermore, the notebook generates the directories informer_checkpoints and agent_checkpoints within the code, in which the weights for the agents as well as the weights of the models optimized using the optimization approaches are stored. Due to their large size compremiered versions could only be made available. The pre-trained models can be loaded as required using model.load_state_dict(torch.load(path)). Of course, this requires initialization with the necessary parameters, which were specified for the corresponding approaches within the master's thesis.
+
+All visualizations and metrics can be implemented using the notebook with the Viz extension. 
+
+Both notebooks with executed cells will be added to this repo.
 
 ## Results
 
@@ -65,9 +69,21 @@ All results are stored in the results directory with the sub-directories for the
 
 ## Project structure
 
+The models and utils directories were taken from the original Informer repo and slightly adapted to the requirements of this project. 
+
+The data_factory directory organizes data retrieval and data provision in the required format.
+
+The class model_Trainer is responsible for the compliant training as well the evaluation and the testing
+
+The directory rl_nas as well as the class informerStudy are organized as packages, which enable the use of the different optimization methods on the Informer architecture.
+
 ```bash
 ├── README.md
 ├── requirements.txt                                -- required libraries
+├── RL_NAS_TSF4E_Viz.ipynb                          -- organizes the experiments and results as well the storage of the optimized models
+├── RL_NAS_TSF4E_Viz.ipynb                          -- organizes all vizualisations
+├── informerStudy.py                                -- package for application of optuna on the informer
+├── model_trainer.py                                -- package which organizes the triaing as well the evaluation and testing
 └── agent_checkpoints
     ├── a2c_model.pth                               -- stores weights of the a2c agent
     └── ppo_model.pth                               -- stores weights of the ppo agent
