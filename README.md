@@ -19,9 +19,6 @@
     - [Dependencies](#Dependencies)
     - [Setup](#Setup)
 - [Reproducing results](#Reproducing-results)
-    - [Training code](#Training-code)
-    - [Evaluation code](#Evaluation-code)
-    - [Pretrained models](#Pretrained-models)
 - [Results](#Results)
 - [Project structure](-Project-structure)
 
@@ -62,17 +59,9 @@ After setup, the enclosed notebooks can be used to reproduce all experiments, re
 
 All experiments and subdirectories can be realized using the notebook with the extension Exp. Specifically, the notebook covers the default case, the comparison experiment with Optuna and the two main experiments supported by RL-NAS. Furthermore, the notebook generates the directories informer_checkpoints and agent_checkpoints within the code, in which the weights for the agents as well as the weights of the models optimized using the optimization approaches are stored. All results are stored in the results directory with the results for the respective approach. 
 
-### Training, Evaluation & Testing
-
-
-
-### Pretrained models
-
-Does a repository provide free access to pretrained model weights?
-
 ## Results
 
-Does a repository contain a table/plot of main results and a script to reproduce those results?
+All results are stored in the results directory with the sub-directories for the respective approach.
 
 ## Project structure
 
